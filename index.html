@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ben Collier | Project Portfolio (Demo)</title>
+  <meta name="description" content="A small demo portfolio site for 70-445 students: a few favorite projects, built with HTML, CSS, a little JavaScript, and an AI coding assistant.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation bar. Each link jumps to a section id further down the page. -->
+  <header class="site-header">
+    <nav class="nav">
+      <a class="nav-name" href="#top">Ben Collier</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <!-- Dark mode button. The behavior lives in script.js. -->
+      <button id="theme-toggle" class="theme-toggle" aria-label="Switch color theme">Dark mode</button>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- Hero: who you are, in one line -->
+    <section class="hero">
+      <p class="eyebrow">Project portfolio</p>
+      <h1>I build things that help people make better decisions with data.</h1>
+      <p class="lede">Teacher, data scientist, and tinkerer in Pittsburgh. Here are a few projects I'm proud of, from code to courses to a long bike ride.</p>
+      <a class="button" href="#projects">See the projects &darr;</a>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <h2>About</h2>
+      <div class="about-grid">
+        <div>
+          <p>I'm an Assistant Teaching Professor of Business Analytics at Carnegie Mellon's Tepper School of Business. Before teaching full time I worked as a data scientist at Duolingo and led data science at UPMC.</p>
+          <p>I like projects with a clear before and after: a messy process that becomes simple, a question that becomes a chart, or a pile of parts that becomes something that works.</p>
+        </div>
+        <ul class="skills">
+          <li>Python</li>
+          <li>Machine learning</li>
+          <li>Data visualization</li>
+          <li>Course design</li>
+          <li>Coding with AI</li>
+          <li>Improv</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Projects: one card per project. Copy a card to add another. -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <p class="section-intro">Each card answers three questions: what it was, why it mattered, and what I used.</p>
+
+      <div class="project-grid">
+
+        <article class="card">
+          <img src="images/website.svg" alt="Sketch of a browser window showing a personal website">
+          <div class="card-body">
+            <p class="tag">Coding with AI</p>
+            <h3>A personal website built with an AI coding agent</h3>
+            <p><strong>What:</strong> A faculty website with courses, talks, news, and a CV, built in conversation with Claude Code and Cursor.</p>
+            <p><strong>Why it mattered:</strong> I described what I wanted in plain English and kept the full chat history in the repo, so students can see every prompt.</p>
+            <p><strong>Tools:</strong> HTML, CSS, Python, GitHub Pages</p>
+            <p class="links"><a href="https://ben.collier.phd/">Live site</a> <a href="https://github.com/bcollier/ben.collier.phd">Code</a></p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="images/course.svg" alt="Sketch of a course calendar with a lightbulb">
+          <div class="card-body">
+            <p class="tag">Teaching</p>
+            <h3>Designing a new AI course from scratch</h3>
+            <p><strong>What:</strong> 70-445 Artificial Intelligence for Business Leaders, a new undergraduate course built around student-taught news segments, live AI exercises, and team projects.</p>
+            <p><strong>Why it mattered:</strong> Business students get hands-on practice judging when to trust AI, with no programming prerequisite.</p>
+            <p><strong>Tools:</strong> Canvas, Claude, n8n, a lot of whiteboard markers</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="images/analytics.svg" alt="Sketch of a bar chart next to a stopwatch">
+          <div class="card-body">
+            <p class="tag">Company project</p>
+            <h3>Sports analytics infrastructure at gAIm Systems</h3>
+            <p><strong>What:</strong> Machine learning pipelines and reporting that turn game data into insights a coach can use.</p>
+            <p><strong>Why it mattered:</strong> A model nobody can run on game day is worth nothing. The work was making it reliable and easy to use.</p>
+            <p><strong>Tools:</strong> Python, cloud data pipelines, ML models</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="images/bike.svg" alt="Sketch of a bicycle on a trail with mountains behind it">
+          <div class="card-body">
+            <p class="tag">Just for fun</p>
+            <h3>Pittsburgh to Washington, DC by bike</h3>
+            <p><strong>What:</strong> Five days of riding from Pittsburgh to DC with three friends.</p>
+            <p><strong>Why it mattered:</strong> Planning the route, gear, and stops was a project like any other, and finishing it was one of the most satisfying things I've done.</p>
+            <p><strong>Tools:</strong> A bike, a spreadsheet of mileage, and a lot of snacks</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>The best way to reach me is email. I'm always happy to talk about teaching, analytics, or AI projects.</p>
+      <ul class="contact-list">
+        <li><a href="mailto:bcollier@andrew.cmu.edu">bcollier@andrew.cmu.edu</a></li>
+        <li><a href="https://github.com/bcollier">GitHub: bcollier</a></li>
+        <li><a href="https://ben.collier.phd/">Main website</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Demo site for 70-445 students. Built with help from an AI coding assistant; the prompts are in <a href="https://github.com/bcollier/portfolio-demo/blob/main/PROMPTS.md">PROMPTS.md</a>.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
